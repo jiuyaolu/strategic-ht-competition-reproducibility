@@ -1,0 +1,4 @@
+data/regenerated/
+__pycache__/
+*.pyc
+.DS_Store

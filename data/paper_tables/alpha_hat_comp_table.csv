@@ -1,0 +1,11 @@
+parameter,value,result_for_alpha_hat_comp,note
+Competition,gamma=0.0,0.10,grid lower endpoint
+Competition,gamma=0.5,0.10,grid lower endpoint
+Competition,gamma=1.0,0.274414,refined numerical estimate
+Competition,gamma=1.5,,no baseline entry on [0.10,0.80]
+Competition,gamma=2.0,,no baseline entry on [0.10,0.80]
+Reward,R=20,0.612793,refined numerical estimate
+Reward,R=30,0.274414,refined numerical estimate
+Reward,R=40,0.274414,refined numerical estimate
+Reward,R=50,0.171875,refined numerical estimate
+Reward,R=60,0.171875,refined numerical estimate

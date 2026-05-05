@@ -1,0 +1,4 @@
+setting,m,R,alpha,prob_S_gt_0,pfdr,mfdr,fdr
+Sparse small market,2,8,0.20,0.638764,0.014963,0.014963,0.009558
+Baseline positive-error,20,30,0.28,0.999934,0.011545,0.011545,0.011545
+Zero-false-approval baseline,20,30,0.20,0.999782,0,0,0

@@ -1,0 +1,12 @@
+paper_object,data_file,source_script
+Figure 1 panel alpha=0.20,data/generated/sections1_6_missing_experiments/exact_benchmark/best_response_alpha_0p2.csv,code/sections1_6_missing_experiments.py
+Figure 1 panel alpha=0.28,data/generated/sections1_6_missing_experiments/exact_benchmark/best_response_alpha_0p28.csv,code/sections1_6_missing_experiments.py
+Figure 2,data/generated/principal_alpha_design/baseline/alpha_sweep.csv,code/principal_alpha_experiments.py
+Figure 3 m=1,data/generated/principal_alpha_design/frontier_m1/alpha_sweep.csv,code/principal_alpha_experiments.py
+Figure 3 m=20,data/generated/principal_alpha_design/frontier_m20/alpha_sweep.csv,code/principal_alpha_experiments.py
+Figure 3 m=40,data/generated/principal_alpha_design/frontier_m40/alpha_sweep.csv,code/principal_alpha_experiments.py
+Figure 4,data/generated/principal_alpha_design/market_size_fdr_cap/optimized_by_m.csv,code/market_size_fdr_cap_experiment.py
+Table 1,data/paper_tables/alpha_hat_comp_table.csv,code/map_alpha_hat_comp.py
+Table 2,data/paper_tables/fdr_notions_table.csv,code/sections1_6_missing_experiments.py and code/principal_alpha_experiments.py
+Table 3,data/paper_tables/fdr_bounds_table.csv,code/principal_alpha_experiments.py
+Table 4,data/paper_tables/self_belief_comparison_table.csv,code/sections1_6_missing_experiments.py
