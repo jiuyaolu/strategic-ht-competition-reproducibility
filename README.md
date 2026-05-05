@@ -57,8 +57,8 @@ python3 code/market_size_fdr_cap_experiment.py \
 To regenerate the exact-knowledge and self-belief numerical outputs, run:
 
 ```bash
-OUTPUT_ROOT=data/regenerated/sections1_6_missing_experiments \
-  python3 code/sections1_6_missing_experiments.py
+OUTPUT_ROOT=data/regenerated/exact_and_self_belief \
+  python3 code/exact_and_self_belief_experiments.py
 ```
 
 The mapping from report objects to files is in `data/manifest.csv`.

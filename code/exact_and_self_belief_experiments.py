@@ -620,7 +620,7 @@ def self_belief_accuracy_rows(alpha: float, params: ModelParams, pilot_sizes: Se
 
 
 def run() -> None:
-    root = Path(os.environ.get("OUTPUT_ROOT", "data/regenerated/sections1_6_missing_experiments"))
+    root = Path(os.environ.get("OUTPUT_ROOT", "data/regenerated/exact_and_self_belief"))
     ensure_dir(root)
 
     baseline = ModelParams(
