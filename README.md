@@ -1,38 +1,37 @@
-# Reproducibility Package
+# Strategic Hypothesis Testing Under Competition
 
-This folder contains the code and data for the numerical results that appear in
-the current paper, `Strategic Hypothesis Testing Under Competition`.
+This repository accompanies the final report `Strategic Hypothesis Testing
+Under Competition`. It provides the code and data used for the numerical figures
+and tables in the report.
 
-The package intentionally excludes archived or commented-out material from the
-working project, including timing, fixed-pool, population-shift, robustness, and
-exploratory proof-search experiments.
+## Repository Contents
 
-## Contents
+- `paper/multiagent.pdf`: a copy of the report.
+- `code/`: Python scripts for computing equilibrium outcomes, false-discovery
+  quantities, threshold comparisons, market-size comparisons, and self-belief
+  quantities.
+- `data/generated/`: generated CSV/JSON files used by the figures in the report.
+- `data/paper_tables/`: CSV versions of the numerical tables shown in the
+  report.
+- `data/manifest.csv`: a guide matching each reported figure/table to its data
+  file and source script.
 
-- `paper/multiagent.pdf`: the paper version associated with these outputs.
-- `code/`: Python scripts used to compute the equilibrium quantities and
-  numerical tables.
-- `data/generated/`: generated CSV/JSON outputs used by the paper figures.
-- `data/paper_tables/`: CSV versions of the displayed numerical tables.
-- `data/manifest.csv`: mapping from each paper figure/table to the data file and
-  source script.
+## Quick Verification
 
-## Quick Check
-
-Run:
+From the repository root, run:
 
 ```bash
 ./reproduce_all.sh
 ```
 
-The default check is lightweight. It verifies that all paper-used files are
-present and checks selected numerical values, without rerunning the full
-experiments.
+This lightweight check verifies that the expected files are present and checks
+selected numerical values against the stored outputs. It is designed to run
+quickly.
 
-## Optional Regeneration
+## Regenerating Numerical Outputs
 
-The full numerical runs can take longer. The following commands regenerate the
-main alpha-threshold data into `data/regenerated/`:
+The stored outputs are deterministic grid-based calculations. To regenerate the
+main threshold-comparison data, run:
 
 ```bash
 python3 code/principal_alpha_experiments.py \
@@ -55,17 +54,16 @@ python3 code/market_size_fdr_cap_experiment.py \
   --output-dir data/regenerated/principal_alpha_design/market_size_fdr_cap
 ```
 
-To regenerate the exact-benchmark and self-belief helper outputs, run:
+To regenerate the exact-knowledge and self-belief numerical outputs, run:
 
 ```bash
 OUTPUT_ROOT=data/regenerated/sections1_6_missing_experiments \
   python3 code/sections1_6_missing_experiments.py
 ```
 
-That helper script also writes some auxiliary diagnostics. The paper-used subset
-is listed in `data/manifest.csv`.
+The mapping from report objects to files is in `data/manifest.csv`.
 
 ## Dependencies
 
-The numerical code uses only the Python standard library. It was run with
+The numerical scripts use only the Python standard library. They were run with
 Python 3.10.
