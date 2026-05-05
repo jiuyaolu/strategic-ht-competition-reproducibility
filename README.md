@@ -16,6 +16,9 @@ and tables in the report.
 - `data/manifest.csv`: a guide matching each reported figure/table to its data
   file and source script.
 
+The subdirectory README files give short descriptions of the scripts and data
+files.
+
 ## Quick Verification
 
 From the repository root, run:
